@@ -66,3 +66,8 @@
 #define PAUSE_BACKGROUND_FADE_TIME 0.5
 
 #define MENU_MOVE_BOUNCE_DURATION 1.5
+
+struct Move
+{
+    int x, y;
+};

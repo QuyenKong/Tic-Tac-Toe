@@ -15,17 +15,19 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(GameScene);
 
-    bool isLastMoveWon(int row, int column, int piece);
+
+    bool lastMoveWon(int row, int column, int piece);
+
 
 private:
-    cocos2d::Rect _gridSpaces[3][3];
-    cocos2d::Sprite* _gridPieces[3][3];
-    cocos2d::Sprite* _gridSprite;
+    cocos2d::Rect gridSpaces[3][3];
+    cocos2d::Sprite* gridPieces[3][3];
+    cocos2d::Sprite* gridSprite;
 
-    int _gridArray[3][3];
+    int gridArray[3][3];
 
-    int _turn;
-    int _gameState;
+    int turn;
+    int gameState;
 
 
     void InitGridRects();

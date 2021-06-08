@@ -59,6 +59,7 @@ void AI::PlacePiece( int ( *gridArray )[3][3], cocos2d::Sprite *gridPieces[3][3]
             CheckSection( checkMatchVector[i][0], checkMatchVector[i][1], checkMatchVector[i][2], checkMatchVector[i][3], checkMatchVector[i][4], checkMatchVector[i][5], PLAYER_PIECE, gridArray, gridPieces );
         }
     
+        
         // check if center is empty
         CheckIfPieceIsEmpty( 1, 1, gridArray, gridPieces );
         
